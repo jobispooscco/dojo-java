@@ -7,12 +7,11 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class EmployeeQueries {
-    List<Employee> employeeList = Util.employeeList();
 
     //Nombres de quienes ganan más de 5,000, ordenados alfabéticamente.
     public static List<String> namesEarningOver (List<Employee> employees, double amount) {
         return employees.stream()
-                .filter(employee -> employee.salary() > Util.AMOUNT_SALARY)
+                .filter(employee -> employee.salary() > amount)
                 .map(Employee::name)
                 .sorted()
                 .toList();
