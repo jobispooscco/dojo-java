@@ -30,7 +30,7 @@ public class Util {
         );
     }
 
-    public static final int AMOUNT_SALARY = 500;
+    public static final int AMOUNT_SALARY = 5000;
 
 
 }
