@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Util {
 
-    public static List<Employee> getEmployees() {
+    public static List<Employee> employeeList() {
         return List.of(
                 new Employee("Patricia", "QA", 7200.00, LocalDate.of(2024, 2, 1)),
                 new Employee("Diego", "Backend", 6200.00, LocalDate.of(2022, 9, 1)),
@@ -29,6 +29,8 @@ public class Util {
                 new Employee("Daniel", "DevOps", 8300.00, LocalDate.of(2017, 8, 19))
         );
     }
+
+    public static final int AMOUNT_SALARY = 500;
 
 
 }
